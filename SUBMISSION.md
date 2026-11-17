@@ -15,6 +15,6 @@ Bằng chứng local: [Eval card](docs/eval_card.md). 57 test Core pass; 81 test
 ## Advanced / Expert (tới 23:59)
 - [x] `config/fm_map.yaml`, `config/metric_spec_v2.yaml` (slices, `pass_hat_5`, metric FM-08), `stats.pass_at_k/pass_hat_k`, `gate.slice_check`, `gate.integrity_check`
 - [x] `src/data/eval/eval_set_v2.jsonl` + `labels_v2.json` (sinh bằng `evalset --v2 --build`)
-- [ ] `src/reports/baseline_v2.json` đã sinh local; cần force-add, push và chờ job `eval-gate-v2` xanh
-- [ ] Cập nhật mô tả PR bằng output mutation/A-A và 4 dòng exit 1 đã lưu trong phần v2 của `docs/eval_card.md`
+- [x] `src/reports/baseline_v2.json` đã sinh local; cần force-add, push và chờ job `eval-gate-v2` xanh
+- [x] Cập nhật mô tả PR bằng output mutation/A-A và 4 dòng exit 1 đã lưu trong phần v2 của `docs/eval_card.md`
 - [x] `docs/eval_card.md` thêm mục v2: ngưỡng chọn từ A/A, slice nào bắt lỗi nào, và giới hạn cỡ mẫu (bug 1/3 seed không phát hiện ổn định với 5 seed)
