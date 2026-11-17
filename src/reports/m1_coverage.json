@@ -1,0 +1,438 @@
+{
+  "scope": "M1 coverage at seed 11; labels remain the original Lab08 labels",
+  "trials": 126,
+  "rows": [
+    {
+      "claim_id": "C-001",
+      "matrix_id": "T01",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-04",
+        "FM-07"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-001-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-001-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "round_down",
+          "trace_path": "traces\\R-m1_cov_round_down-C-001-s11.json",
+          "run_id": "R-m1_cov_round_down-C-001-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-07",
+          "bug": "sibling_refund",
+          "trace_path": "traces\\R-m1_cov_sibling_refund-C-001-s11.json",
+          "run_id": "R-m1_cov_sibling_refund-C-001-s11",
+          "lab8_pass": false,
+          "reason_category": "unexpected_ledger_rows"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-002",
+      "matrix_id": "T02",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-03"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-002-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-002-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-03",
+          "bug": "ticket_trust",
+          "trace_path": "traces\\R-m1_cov_ticket_trust-C-002-s11.json",
+          "run_id": "R-m1_cov_ticket_trust-C-002-s11",
+          "lab8_pass": false,
+          "reason_category": "status resolved != denied"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-003",
+      "matrix_id": "T03",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-003-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-003-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-004",
+      "matrix_id": "T04",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-004-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-004-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-005",
+      "matrix_id": "T05",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-005-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-005-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-006",
+      "matrix_id": "T06",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-06"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-006-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-006-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-06",
+          "bug": "stale_clause",
+          "trace_path": "traces\\R-m1_cov_stale_clause-C-006-s11.json",
+          "run_id": "R-m1_cov_stale_clause-C-006-s11",
+          "lab8_pass": false,
+          "reason_category": "status resolved != denied"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-007",
+      "matrix_id": "T07",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-02",
+        "FM-04"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-007-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-007-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-02",
+          "bug": "ignore_denied",
+          "trace_path": "traces\\R-m1_cov_ignore_denied-C-007-s11.json",
+          "run_id": "R-m1_cov_ignore_denied-C-007-s11",
+          "lab8_pass": false,
+          "reason_category": "status resolved != denied"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "round_down",
+          "trace_path": "traces\\R-m1_cov_round_down-C-007-s11.json",
+          "run_id": "R-m1_cov_round_down-C-007-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-008",
+      "matrix_id": "T08",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-04",
+        "FM-08"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-008-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-008-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "round_down",
+          "trace_path": "traces\\R-m1_cov_round_down-C-008-s11.json",
+          "run_id": "R-m1_cov_round_down-C-008-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-08",
+          "bug": "misreport",
+          "trace_path": "traces\\R-m1_cov_misreport-C-008-s11.json",
+          "run_id": "R-m1_cov_misreport-C-008-s11",
+          "lab8_pass": true,
+          "reason_category": "ok"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-009",
+      "matrix_id": "T09",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-009-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-009-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-010",
+      "matrix_id": "T10",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-04",
+        "FM-07"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-010-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-010-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "round_down",
+          "trace_path": "traces\\R-m1_cov_round_down-C-010-s11.json",
+          "run_id": "R-m1_cov_round_down-C-010-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-07",
+          "bug": "sibling_refund",
+          "trace_path": "traces\\R-m1_cov_sibling_refund-C-010-s11.json",
+          "run_id": "R-m1_cov_sibling_refund-C-010-s11",
+          "lab8_pass": false,
+          "reason_category": "unexpected_ledger_rows"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-011",
+      "matrix_id": "T11",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-04",
+        "FM-07"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-011-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-011-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "round_down",
+          "trace_path": "traces\\R-m1_cov_round_down-C-011-s11.json",
+          "run_id": "R-m1_cov_round_down-C-011-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-07",
+          "bug": "sibling_refund",
+          "trace_path": "traces\\R-m1_cov_sibling_refund-C-011-s11.json",
+          "run_id": "R-m1_cov_sibling_refund-C-011-s11",
+          "lab8_pass": false,
+          "reason_category": "unexpected_ledger_rows"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-012",
+      "matrix_id": "T12",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-04",
+        "FM-07"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-012-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-012-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "round_down",
+          "trace_path": "traces\\R-m1_cov_round_down-C-012-s11.json",
+          "run_id": "R-m1_cov_round_down-C-012-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-07",
+          "bug": "sibling_refund",
+          "trace_path": "traces\\R-m1_cov_sibling_refund-C-012-s11.json",
+          "run_id": "R-m1_cov_sibling_refund-C-012-s11",
+          "lab8_pass": false,
+          "reason_category": "unexpected_ledger_rows"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-013",
+      "matrix_id": "T13",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-02",
+        "FM-04",
+        "FM-05"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-013-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-013-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-02",
+          "bug": "ignore_denied",
+          "trace_path": "traces\\R-m1_cov_ignore_denied-C-013-s11.json",
+          "run_id": "R-m1_cov_ignore_denied-C-013-s11",
+          "lab8_pass": false,
+          "reason_category": "status resolved != denied"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "round_down",
+          "trace_path": "traces\\R-m1_cov_round_down-C-013-s11.json",
+          "run_id": "R-m1_cov_round_down-C-013-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-05",
+          "bug": "pre_deducted",
+          "trace_path": "traces\\R-m1_cov_pre_deducted-C-013-s11.json",
+          "run_id": "R-m1_cov_pre_deducted-C-013-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-014",
+      "matrix_id": "T14",
+      "seed": 11,
+      "observed_failure_modes": [
+        "FM-01",
+        "FM-04",
+        "FM-05",
+        "FM-08"
+      ],
+      "evidence": [
+        {
+          "failure_mode": "FM-01",
+          "bug": "leaky_trace",
+          "trace_path": "traces\\R-m1_cov_leaky_trace-C-014-s11.json",
+          "run_id": "R-m1_cov_leaky_trace-C-014-s11",
+          "lab8_pass": false,
+          "reason_category": "forbidden_substring"
+        },
+        {
+          "failure_mode": "FM-04",
+          "bug": "sum_parts",
+          "trace_path": "traces\\R-m1_cov_sum_parts-C-014-s11.json",
+          "run_id": "R-m1_cov_sum_parts-C-014-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-05",
+          "bug": "pre_deducted",
+          "trace_path": "traces\\R-m1_cov_pre_deducted-C-014-s11.json",
+          "run_id": "R-m1_cov_pre_deducted-C-014-s11",
+          "lab8_pass": false,
+          "reason_category": "proposal_mismatch"
+        },
+        {
+          "failure_mode": "FM-08",
+          "bug": "misreport",
+          "trace_path": "traces\\R-m1_cov_misreport-C-014-s11.json",
+          "run_id": "R-m1_cov_misreport-C-014-s11",
+          "lab8_pass": true,
+          "reason_category": "ok"
+        }
+      ]
+    }
+  ]
+}

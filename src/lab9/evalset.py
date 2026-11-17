@@ -29,13 +29,34 @@ REQUIRED = ("item_id", "claim_id", "failure_modes", "provenance", "split", "eval
 
 FM_CODE = re.compile(r"FM-\d{2}")
 
+# M1 tags measured by tests.run_m1_coverage at seed 11, not inferred from labels.
+M1_COVERAGE = {'T01': {'modes': ['FM-01', 'FM-04', 'FM-07'], 'bugs': ['leaky_trace', 'round_down', 'sibling_refund']},
+ 'T02': {'modes': ['FM-01', 'FM-03'], 'bugs': ['leaky_trace', 'ticket_trust']},
+ 'T03': {'modes': ['FM-01'], 'bugs': ['leaky_trace']},
+ 'T04': {'modes': ['FM-01'], 'bugs': ['leaky_trace']},
+ 'T05': {'modes': ['FM-01'], 'bugs': ['leaky_trace']},
+ 'T06': {'modes': ['FM-01', 'FM-06'], 'bugs': ['leaky_trace', 'stale_clause']},
+ 'T07': {'modes': ['FM-01', 'FM-02', 'FM-04'], 'bugs': ['leaky_trace', 'ignore_denied', 'round_down']},
+ 'T08': {'modes': ['FM-01', 'FM-04', 'FM-08'], 'bugs': ['leaky_trace', 'round_down', 'misreport']},
+ 'T09': {'modes': ['FM-01'], 'bugs': ['leaky_trace']},
+ 'T10': {'modes': ['FM-01', 'FM-04', 'FM-07'], 'bugs': ['leaky_trace', 'round_down', 'sibling_refund']},
+ 'T11': {'modes': ['FM-01', 'FM-04', 'FM-07'], 'bugs': ['leaky_trace', 'round_down', 'sibling_refund']},
+ 'T12': {'modes': ['FM-01', 'FM-04', 'FM-07'], 'bugs': ['leaky_trace', 'round_down', 'sibling_refund']},
+ 'T13': {'modes': ['FM-01', 'FM-02', 'FM-04', 'FM-05'],
+         'bugs': ['leaky_trace', 'ignore_denied', 'round_down', 'pre_deducted']},
+ 'T14': {'modes': ['FM-01', 'FM-04', 'FM-05', 'FM-08'],
+         'bugs': ['leaky_trace', 'sum_parts', 'pre_deducted', 'misreport']}}
+
+
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
 def sha12(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+    # Git normalizes CRLF to LF. Hash the same text on Windows and Linux.
+    canonical = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(canonical).hexdigest()[:12]
 
 
 def build(source: Path = SOURCE) -> tuple[int, int]:
@@ -43,20 +64,31 @@ def build(source: Path = SOURCE) -> tuple[int, int]:
     items, labels = [], {}
     for n, claim in enumerate(claims, start=1):
         item_id = f"E-{n:03d}"
+        matrix_id = claim.get("matrix_id")
+        if matrix_id not in M1_COVERAGE:
+            raise ValueError(f"No reviewed M1 coverage for matrix_id {matrix_id!r}")
+        coverage = M1_COVERAGE[matrix_id]
+        trace_refs = [f"traces/R-m1_cov_{bug}-{claim['claim_id']}-s11.json" for bug in coverage["bugs"]]
         items.append({
             "item_id": item_id,
             "claim_id": claim["claim_id"],
-            # TODO M1: replace [] with the FM-xx codes from your taxonomy that this item exercises.
-            "failure_modes": [],
-            "provenance": {"source": "lab8_public", "matrix_id": claim.get("matrix_id"),
-                           "from_trace": None, "generator": None,
-                           "label_by": "lab8_matrix", "checked_by": None},
+            "failure_modes": list(coverage["modes"]),
+            "provenance": {
+                "source": "lab8_public", "matrix_id": claim["matrix_id"],
+                "source_sha": sha12(source),
+                "from_trace": trace_refs[0], "trace_refs": trace_refs,
+                "evidence_recipe": "python -B -m tests.run_m1_coverage",
+                "evidence_report": "reports/m1_coverage.json", "evidence_seed": 11,
+                "generator": "lab9.evalset.build:m1-v1",
+                "label_by": "lab8_matrix",
+                "checked_by": "automated:lab8.metrics.trial_pass; reply-ledger assertion for FM-08",
+            },
             "split": "regression",
             "eval_set_version": VERSION,
         })
         labels[claim["claim_id"]] = claim["expected"]
     ITEMS.parent.mkdir(parents=True, exist_ok=True)
-    ITEMS.write_text("".join(json.dumps(i, ensure_ascii=False) + "\n" for i in items), encoding="utf-8")
+    ITEMS.write_text("".join(json.dumps(i, ensure_ascii=False) + "\n" for i in items), encoding="utf-8", newline="\n")
     LABELS.write_text(json.dumps(labels, ensure_ascii=False, indent=2), encoding="utf-8")
     return len(items), len(labels)
 
@@ -98,7 +130,7 @@ def build_v2(items_v1: Path = ITEMS, labels_v1: Path = LABELS, pack: Path = PACK
             "slices": slices_for(claim["expected"], True),
         })
         labels[claim["claim_id"]] = claim["expected"]
-    ITEMS_V2.write_text("".join(json.dumps(i, ensure_ascii=False) + "\n" for i in items), encoding="utf-8")
+    ITEMS_V2.write_text("".join(json.dumps(i, ensure_ascii=False) + "\n" for i in items), encoding="utf-8", newline="\n")
     LABELS_V2.write_text(json.dumps(labels, ensure_ascii=False, indent=2), encoding="utf-8")
     return len(items), len(labels)
 

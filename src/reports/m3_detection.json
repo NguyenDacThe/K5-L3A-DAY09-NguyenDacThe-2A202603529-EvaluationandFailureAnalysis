@@ -1,0 +1,4828 @@
+{
+  "run_id": "m3-20261117T100451Z",
+  "recipe": "python -B -m tests.run_m3_detection",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "scope": "all registered code graders, including unchanged TrialPass; activated isolated faults",
+  "faulty": 175,
+  "detected": 175,
+  "detection_rate": 1.0,
+  "fixed_false_positive_rate": 0.0,
+  "suites": [
+    {
+      "shape": "fixed",
+      "trials": 70,
+      "faulty": 0,
+      "detected": 0,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        }
+      ]
+    },
+    {
+      "shape": "m3_leaky_trace",
+      "trials": 70,
+      "faulty": 70,
+      "detected": 70,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "secret_leak"
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "m3_ignore_denied",
+      "trials": 70,
+      "faulty": 10,
+      "detected": 10,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        }
+      ]
+    },
+    {
+      "shape": "m3_ticket_trust",
+      "trials": 70,
+      "faulty": 5,
+      "detected": 5,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "db_fact_kept"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "db_fact_kept"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "db_fact_kept"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "db_fact_kept"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "db_fact_kept"
+          ]
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        }
+      ]
+    },
+    {
+      "shape": "m3_sum_parts",
+      "trials": 70,
+      "faulty": 5,
+      "detected": 5,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "m3_round_down",
+      "trials": 70,
+      "faulty": 35,
+      "detected": 35,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        }
+      ]
+    },
+    {
+      "shape": "m3_pre_deducted",
+      "trials": 70,
+      "faulty": 15,
+      "detected": 15,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct",
+            "reply_amount_correct"
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "m3_stale_clause",
+      "trials": 70,
+      "faulty": 5,
+      "detected": 5,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        }
+      ]
+    },
+    {
+      "shape": "m3_sibling_refund",
+      "trials": 70,
+      "faulty": 20,
+      "detected": 20,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "pass_rate",
+            "approval_bypass",
+            "refund_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        }
+      ]
+    },
+    {
+      "shape": "m3_misreport",
+      "trials": 70,
+      "faulty": 10,
+      "detected": 10,
+      "false_alarms": 0,
+      "rows": [
+        {
+          "claim_id": "C-001",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-001",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-002",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-003",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-004",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-005",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-006",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-007",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-008",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-009",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-010",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-011",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-012",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 11,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 22,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 33,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 44,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-013",
+          "seed": 55,
+          "fault_observed": false,
+          "detected_by": []
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 11,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 22,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 33,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 44,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        },
+        {
+          "claim_id": "C-014",
+          "seed": 55,
+          "fault_observed": true,
+          "detected_by": [
+            "reply_amount_correct"
+          ]
+        }
+      ]
+    }
+  ]
+}

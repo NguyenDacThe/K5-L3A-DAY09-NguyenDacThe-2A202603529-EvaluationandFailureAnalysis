@@ -19,7 +19,8 @@ FLOORS = {"kappa": 0.6, "precision": 0.8, "recall": 0.7}
 
 
 def calibrate(path: Path) -> dict:
-    rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    with path.open(encoding="utf-8") as stream:
+        rows = list(csv.DictReader(stream))
     human = [r["human"].strip().upper() for r in rows]
     judge = [r["judge"].strip().upper() for r in rows]
     p, r = stats.precision_recall(human, judge)
@@ -30,11 +31,21 @@ def calibrate(path: Path) -> dict:
     cm = stats.confusion(human, judge)
     spec = cm["tn"] / (cm["tn"] + cm["fp"]) if cm["tn"] + cm["fp"] else 0.0
     obs = (cm["tp"] + cm["fp"]) / len(rows)
+    correction_error = None
+    try:
+        corrected = round(stats.rogan_gladen(obs, r, spec), 3)
+    except ValueError as exc:
+        corrected = None
+        correction_error = str(exc)
     res = {"n": len(rows), "precision": round(p, 3), "recall": round(r, 3), "kappa": round(k, 3),
            "confusion": cm, "observed_fail_rate": round(obs, 3),
-           "corrected_fail_rate": round(stats.rogan_gladen(obs, r, spec), 3),
+           "corrected_fail_rate": corrected,
            "disagreements": [x for x, h, j in zip(rows, human, judge) if h != j]}
-    res["passed"] = all(res[m] >= f for m, f in FLOORS.items())   # nan compares False -> fails
+    if correction_error is not None:
+        res["correction_error"] = correction_error
+    # Compare unrounded scores: display rounding must not promote a failing judge.
+    scores = {"kappa": k, "precision": p, "recall": r}
+    res["passed"] = all(scores[m] >= f for m, f in FLOORS.items())  # nan fails
     return res
 
 
