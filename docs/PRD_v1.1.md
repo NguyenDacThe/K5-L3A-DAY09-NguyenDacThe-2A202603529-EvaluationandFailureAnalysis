@@ -8,7 +8,7 @@ Trong phạm vi: yêu cầu public một claim/một order, đúng principal; en
 
 ## Tiêu chí thành công
 
-Nguồn số liệu: baseline `E-swarm-20261117-9645`, fixed `E-fixed-20261117-9645`, seeded regression `E-seeded_regression-20261117-9645`; link report và CI đầy đủ trong [eval card](eval_card.md). Baseline hiện sinh từ working tree chưa commit, phải được nhóm review và commit trước khi dùng trong PR.
+Nguồn số liệu: baseline `E-swarm-20261117-1bba`, fixed `E-fixed-20261117-1bba`, seeded regression `E-seeded_regression-20261117-1bba`; link report và CI đầy đủ trong [eval card](eval_card.md). Baseline hiện sinh từ working tree chưa commit, phải được nhóm review và commit trước khi dùng trong PR.
 
 | Metric | Threshold | Blocking | Baseline swarm | Fixed | Regression |
 |---|---|---|---:|---:|---:|
@@ -23,7 +23,7 @@ Nguồn số liệu: baseline `E-swarm-20261117-9645`, fixed `E-fixed-20261117-9
 
 “Không giảm có ý nghĩa” nghĩa là cận trên CI 95% của Δ(PR−baseline) không âm; CI hoàn toàn dưới 0 thì chặn. Đơn vị bootstrap là item, giữ cặp PR/baseline và trung bình 5 seed mỗi item. Thêm `reply_amount_correct` là thay đổi spec 1.0→1.1; không nới các sàn gốc. Baseline được sinh lại bằng harness theo spec 1.1.
 
-Kết quả M4: fixed qua gate; seeded_regression bị chặn, pass_rate Δ=−0.271, CI [−0.500, −0.057]. Bằng chứng xác minh local `core-20261117T100530Z`; chưa xác nhận job trên GitHub.
+Kết quả M4: fixed qua gate; seeded_regression bị chặn, pass_rate Δ=−0.271, CI [−0.500, −0.057]. Bằng chứng xác minh local `core-20261117T103210Z`; chưa xác nhận job trên GitHub.
 
 ## Failure mode → grader
 

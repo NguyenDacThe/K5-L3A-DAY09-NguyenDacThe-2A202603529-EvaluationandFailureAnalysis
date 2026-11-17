@@ -10,7 +10,7 @@ PR từ `starter/d09` → `main` của repo nhóm. Chấm commit cuối trước
 - [x] Job `eval-gate` xanh; dán output gate exit 1 của `seeded_regression` vào mô tả PR
 
 
-Bằng chứng local: [Eval card](docs/eval_card.md) và [bàn giao Core / mô tả PR](docs/core_submission.md). 55 test Core pass; 81 test host pass. 
+Bằng chứng local: [Eval card](docs/eval_card.md). 57 test Core pass; 81 test host pass.
 
 ## Advanced / Expert (tới 23:59)
 - [x] `config/fm_map.yaml`, `config/metric_spec_v2.yaml` (slices, `pass_hat_5`, metric FM-08), `stats.pass_at_k/pass_hat_k`, `gate.slice_check`, `gate.integrity_check`

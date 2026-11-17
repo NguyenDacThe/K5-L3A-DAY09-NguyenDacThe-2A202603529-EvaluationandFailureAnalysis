@@ -44,3 +44,19 @@ def test_lab9_m1_unknown_source_case_requires_review(tmp_path, monkeypatch):
     source.write_text(json.dumps({"claim_id": "C-NEW", "matrix_id": "T99", "expected": {}}) + "\n", encoding="utf-8")
     with pytest.raises(ValueError, match="No reviewed M1 coverage"):
         evalset.build(source)
+
+
+def test_lab9_hash_is_portable_between_windows_and_linux(tmp_path):
+    lf = tmp_path / "lf.jsonl"
+    crlf = tmp_path / "crlf.jsonl"
+    lf.write_bytes(b'{"item_id":"E-001"}\n')
+    crlf.write_bytes(b'{"item_id":"E-001"}\r\n')
+    assert evalset.sha12(lf) == evalset.sha12(crlf)
+    crlf.write_bytes(b'{"item_id":"E-002"}\r\n')
+    assert evalset.sha12(lf) != evalset.sha12(crlf)
+
+
+def test_lab9_build_writes_lf_on_every_platform(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    evalset.build(SOURCE)
+    assert b"\r\n" not in evalset.ITEMS.read_bytes()
