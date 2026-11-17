@@ -1,5 +1,5 @@
 {
-  "run_id": "m2-20261117T100546176053Z",
+  "run_id": "m2-20261117T105342460475Z",
   "recipe": "python -B -m tests.run_m2_calibration",
   "backend": "public_csv_replay",
   "positive_class": "FAIL",
@@ -9,7 +9,7 @@
     "recall": 0.7
   },
   "implementation_sha256": {
-    "stats.py": "1f98a88609216f6c62c01a18d2e940864b7b6ed20605ed48480419287e99e2e0",
+    "stats.py": "c9c54070f605dde76a117802df66b766c154388b117fb4839984398d2b9a4df4",
     "judge.py": "5e617cc8e111683b84b657c2af4a9251c6f2ff7e2fb341ac7f7f5b4d4fbc71b9"
   },
   "judges": {

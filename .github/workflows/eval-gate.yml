@@ -69,7 +69,7 @@ jobs:
     defaults: {run: {working-directory: src}}
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: {persist-credentials: false, fetch-depth: 0}
       - id: has
         run: "test -f reports/baseline_v2.json && echo v2=1 >> \"$GITHUB_OUTPUT\" || echo skip, no baseline_v2"
       - if: steps.has.outputs.v2
@@ -82,4 +82,26 @@ jobs:
       - if: steps.has.outputs.v2
         run: python -m lab9.evalset --v2
       - if: steps.has.outputs.v2
-        run: python -m lab9.mutation --spec config/metric_spec_v2.yaml --baseline reports/baseline_v2.json
+        name: Load the protected base spec for the same-version ratchet
+        shell: bash
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ -n "$BASE_SHA" ]] && git cat-file -e "$BASE_SHA:src/config/metric_spec_v2.yaml" 2>/dev/null; then
+            mkdir -p reports
+            git show "$BASE_SHA:src/config/metric_spec_v2.yaml" > reports/base_spec_v2.yaml
+          fi
+      - if: steps.has.outputs.v2
+        name: Verify mutation scorecard and the spec ratchet
+        shell: bash
+        run: |
+          ratchet_args=()
+          if [[ -f reports/base_spec_v2.yaml ]]; then
+            ratchet_args=(--base-spec reports/base_spec_v2.yaml)
+          fi
+          python -m lab9.mutation --spec config/metric_spec_v2.yaml --baseline reports/baseline_v2.json "${ratchet_args[@]}"
+      - if: steps.has.outputs.v2
+        name: Verify all public integrity traps are blocked
+        run: |
+          python -m lab9.eval --shape slice_regression --spec config/metric_spec_v2.yaml --out reports/eval_v2_slice_regression.json
+          python -m lab9.traps --pr reports/eval_v2_slice_regression.json --baseline reports/baseline_v2.json --spec config/metric_spec_v2.yaml

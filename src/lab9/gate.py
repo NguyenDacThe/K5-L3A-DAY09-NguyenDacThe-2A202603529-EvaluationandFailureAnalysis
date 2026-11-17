@@ -33,8 +33,8 @@ def integrity_check(pr: dict, base: dict, spec: dict, base_spec: dict | None = N
         including dropping no_significant_drop)
       - an item's slice tags in PR rows differ from the baseline's (relabelling an item out of a
         slice hides its regression from the slice gate)"""
-    # TODO M7
-    return []
+    from lab9.integrity import validate
+    return validate(pr, base, spec, base_spec)
 
 
 def slice_check(pr: dict, base: dict, spec: dict) -> tuple[list[str], list[str]]:
@@ -44,11 +44,39 @@ def slice_check(pr: dict, base: dict, spec: dict) -> tuple[list[str], list[str]]
       - fail if below "min", or if no_significant_drop and the paired CI over the slice's items
         lies entirely below 0
     Return (blocked ids like "slice:money_movement/pass_rate", report lines)."""
-    # TODO M5
-    return [], []
+    blocked, lines = [], []
+    bs = spec.get("bootstrap", {})
+    for entry in spec.get("slices", []):
+        mid, name = entry["metric"], entry["name"]
+        ident = f"slice:{name}/{mid}"
+        a, b = per_item(pr, mid, name), per_item(base, mid, name)
+        note, failed = "", False
+        value = sum(a.values()) / len(a) if a else None
+        if not a or set(a) != set(b):
+            failed, note = True, "missing or unpaired slice items"
+        else:
+            if "min" in entry and value < entry["min"]:
+                failed = True
+            if entry.get("no_significant_drop"):
+                keys = sorted(a)
+                if len(keys) < 2:
+                    failed, note = True, "need at least two paired slice items"
+                else:
+                    d, lo, hi = stats.paired_bootstrap([a[k] for k in keys], [b[k] for k in keys],
+                        n_resamples=bs.get("n_resamples", 1000), rng=bs.get("rng", 2027),
+                        confidence=bs.get("confidence", 0.95))
+                    note = f"delta {d:+.3f} CI [{lo:+.3f}, {hi:+.3f}]"
+                    failed |= hi < 0
+        if failed and entry.get("blocking"):
+            blocked.append(ident)
+        verdict = "BLOCK" if failed and entry.get("blocking") else "warn" if failed else "ok"
+        lines.append(f"  {ident} {value} {note} {verdict}")
+    return blocked, lines
 
 
 def check(pr: dict, base: dict, spec: dict, base_spec: dict | None = None) -> tuple[list[str], list[str]]:
+    if not pr.get("manifest", {}).get("eval_set_sha") or not base.get("manifest", {}).get("eval_set_sha"):
+        return ["integrity"], ["  INTEGRITY missing eval-set identity"]
     if pr["manifest"]["eval_set_sha"] != base["manifest"]["eval_set_sha"]:
         return ["eval_set_sha"], ["  EVAL SET differs from the baseline's: re-run the baseline on the same eval set"]
     problems = integrity_check(pr, base, spec, base_spec)
@@ -72,7 +100,8 @@ def check(pr: dict, base: dict, spec: dict, base_spec: dict | None = None) -> tu
             a, b = per_item(pr, mid), per_item(base, mid)
             keys = sorted(set(a) & set(b))
             d, lo, hi = stats.paired_bootstrap([a[k] for k in keys], [b[k] for k in keys],
-                                               n_resamples=bs.get("n_resamples", 1000), rng=bs.get("rng", 2027))
+                                               n_resamples=bs.get("n_resamples", 1000), rng=bs.get("rng", 2027),
+                                               confidence=bs.get("confidence", 0.95))
             note = f"Δ {d:+.3f} CI [{lo:+.3f}, {hi:+.3f}]"
             if hi < 0:
                 verdict = "fail"

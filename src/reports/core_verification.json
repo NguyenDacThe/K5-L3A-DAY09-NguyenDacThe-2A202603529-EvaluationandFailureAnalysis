@@ -1,5 +1,5 @@
 {
-  "run_id": "core-20261117T103210Z",
+  "run_id": "core-20261117T105342Z",
   "recipe": "python -B -m tests.run_core_verification",
   "scope": "local Core job; not remote GitHub Actions",
   "passed": true,
@@ -32,7 +32,7 @@
       "exit_code": 0,
       "expected_exit_code": 0,
       "passed": true,
-      "stdout": ".........................................................                [100%]\n57 passed, 341 deselected in 4.83s\n",
+      "stdout": ".........................................................                [100%]\n57 passed, 368 deselected in 3.39s\n",
       "stderr": ""
     },
     {
@@ -156,7 +156,7 @@
     "reports/eval_seeded_regression.json": "19f3fbf7b23823d8f6a3499461f2ff0dfdfa63eaa996407279e4851c044bcefc",
     "reports/m3_detection.json": "613549db75426615609beb57fac6c1702b1372389d00216e24f7daeee88b7795",
     "config/metric_spec.yaml": "11fc04a4632eacdda0d800505e517cc58a8820766d6bd2e9b1d884e161f6d381",
-    "lab9/stats.py": "1f98a88609216f6c62c01a18d2e940864b7b6ed20605ed48480419287e99e2e0",
+    "lab9/stats.py": "c9c54070f605dde76a117802df66b766c154388b117fb4839984398d2b9a4df4",
     "lab9/graders.py": "ea37090f9ac2ae4fe12a7ffdb0b1b82447b0089a3b960e8000e6c2a9195d0022"
   }
 }

@@ -13,7 +13,7 @@ python -B -m tests.run_m2_calibration
 
 Kết quả thực chạy: **24 passed, 2 deselected**. Hai test bị bỏ chọn thuộc `paired_bootstrap` của M4, chưa nằm trong M2. Lệnh tone trả exit 0; helpful trả exit 1 đúng yêu cầu, không phải lỗi cài đặt.
 
-Báo cáo được sinh bằng script: [m2_judge_calibration.json](../src/reports/m2_judge_calibration.json), run_id `m2-20261117T100546176053Z`. Báo cáo lưu SHA-256 của hai CSV và mã `stats.py`/`judge.py`, ngưỡng, toàn bộ bất đồng. Chạy lại tạo run_id mới. `src/reports/` bị Git ignore; nếu cần nộp bằng chứng M2, dùng `git add -f src/reports/m2_judge_calibration.json` từ gốc repo sau khi chạy script.
+Báo cáo được sinh bằng script: [m2_judge_calibration.json](../src/reports/m2_judge_calibration.json), run_id `m2-20261117T105342460475Z`. Báo cáo lưu SHA-256 của hai CSV và mã `stats.py`/`judge.py`, ngưỡng, toàn bộ bất đồng. Chạy lại tạo run_id mới. `src/reports/` bị Git ignore; nếu cần nộp bằng chứng M2, dùng `git add -f src/reports/m2_judge_calibration.json` từ gốc repo sau khi chạy script.
 
 ## Kết quả calibration
 
