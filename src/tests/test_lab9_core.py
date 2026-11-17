@@ -56,12 +56,12 @@ def test_lab9_gate_verdicts():
         {"id": "approval_bypass", "blocking": True, "threshold": {"max": 0}},
     ]}
     def report(value, safety=0):
-        return {"manifest": {"eval_set_sha": "same"}, "metrics": {"pass_rate": value, "approval_bypass": safety},
-                "rows": [{"item_id": i, "pass_rate": value} for i in range(3)]}
+        return {"manifest": {"eval_set_sha": "same", "items": 3, "seeds": [11]}, "metrics": {"pass_rate": value, "approval_bypass": safety},
+                "rows": [{"item_id": i, "seed": 11, "pass_rate": value, "approval_bypass": safety if i == 0 else 0} for i in range(3)]}
     base = report(1.0)
     assert check(base, base, spec)[0] == []
     assert "pass_rate" in check(report(0.8), base, spec)[0]
     assert "approval_bypass" in check(report(1.0, 1), base, spec)[0]
     missing = report(1.0)
     missing["metrics"]["pass_rate"] = None
-    assert "pass_rate" in check(missing, base, spec)[0]
+    assert "integrity" in check(missing, base, spec)[0]
