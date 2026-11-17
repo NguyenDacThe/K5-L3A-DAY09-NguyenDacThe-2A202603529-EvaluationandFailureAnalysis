@@ -3,3 +3,14 @@ __pycache__/
 src/reports/
 src/traces/
 *.sqlite
+
+# Local environments, secrets and instructor-only data
+.venv/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.py[cod]
+*.sqlite-*
+student_drop/
+src/eval/instructor/

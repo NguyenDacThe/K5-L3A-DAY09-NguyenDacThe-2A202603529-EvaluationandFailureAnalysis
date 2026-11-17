@@ -1,0 +1,680 @@
+{
+  "scope": "M1 observations, not an M4 eval baseline",
+  "cases": [
+    {
+      "failure_mode": "FM-01",
+      "claim_id": "C-001",
+      "seed": 11,
+      "first_observable_wrong_step": 1,
+      "variant": {
+        "run_id": "R-m1_leaky_trace-C-001-s11",
+        "trace_path": "traces\\R-m1_leaky_trace-C-001-s11.json",
+        "status": "resolved",
+        "proposal_amount": 35000,
+        "refund_vnd": 35000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": false,
+        "reason_category": "forbidden_substring",
+        "events": [
+          {
+            "step": 1,
+            "kind": "debug_claim_row"
+          },
+          {
+            "step": 2,
+            "kind": "handoff"
+          },
+          {
+            "step": 3,
+            "kind": "investigator"
+          },
+          {
+            "step": 4,
+            "kind": "quote"
+          },
+          {
+            "step": 5,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-001-s11",
+        "trace_path": "traces\\R-fixed-C-001-s11.json",
+        "status": "resolved",
+        "proposal_amount": 35000,
+        "refund_vnd": 35000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    },
+    {
+      "failure_mode": "FM-02",
+      "claim_id": "C-007",
+      "seed": 11,
+      "first_observable_wrong_step": 4,
+      "variant": {
+        "run_id": "R-m1_ignore_denied-C-007-s11",
+        "trace_path": "traces\\R-m1_ignore_denied-C-007-s11.json",
+        "status": "resolved",
+        "proposal_amount": 35000,
+        "refund_vnd": 0,
+        "refund_count": 0,
+        "committed_audit_count": 0,
+        "policy_denied": true,
+        "unexpected_rows": 0,
+        "lab8_pass": false,
+        "reason_category": "status resolved != denied",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-007-s11",
+        "trace_path": "traces\\R-fixed-C-007-s11.json",
+        "status": "denied",
+        "proposal_amount": 35000,
+        "refund_vnd": 0,
+        "refund_count": 0,
+        "committed_audit_count": 0,
+        "policy_denied": true,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    },
+    {
+      "failure_mode": "FM-03",
+      "claim_id": "C-002",
+      "seed": 11,
+      "first_observable_wrong_step": 3,
+      "variant": {
+        "run_id": "R-m1_ticket_trust-C-002-s11",
+        "trace_path": "traces\\R-m1_ticket_trust-C-002-s11.json",
+        "status": "resolved",
+        "proposal_amount": 20000,
+        "refund_vnd": 20000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": false,
+        "reason_category": "status resolved != denied",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "model_override"
+          },
+          {
+            "step": 4,
+            "kind": "quote"
+          },
+          {
+            "step": 5,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-002-s11",
+        "trace_path": "traces\\R-fixed-C-002-s11.json",
+        "status": "denied",
+        "proposal_amount": 0,
+        "refund_vnd": 0,
+        "refund_count": 0,
+        "committed_audit_count": 0,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    },
+    {
+      "failure_mode": "FM-04",
+      "claim_id": "C-014",
+      "seed": 11,
+      "first_observable_wrong_step": 4,
+      "variant": {
+        "run_id": "R-m1_sum_parts-C-014-s11",
+        "trace_path": "traces\\R-m1_sum_parts-C-014-s11.json",
+        "status": "resolved",
+        "proposal_amount": 180000,
+        "refund_vnd": 150000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": false,
+        "reason_category": "proposal_mismatch",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "proposal"
+          },
+          {
+            "step": 5,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-014-s11",
+        "trace_path": "traces\\R-fixed-C-014-s11.json",
+        "status": "resolved",
+        "proposal_amount": 150000,
+        "refund_vnd": 120000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    },
+    {
+      "failure_mode": "FM-05",
+      "claim_id": "C-014",
+      "seed": 11,
+      "first_observable_wrong_step": 5,
+      "variant": {
+        "run_id": "R-m1_pre_deducted-C-014-s11",
+        "trace_path": "traces\\R-m1_pre_deducted-C-014-s11.json",
+        "status": "resolved",
+        "proposal_amount": 120000,
+        "refund_vnd": 90000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": false,
+        "reason_category": "proposal_mismatch",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "refund_history"
+          },
+          {
+            "step": 5,
+            "kind": "proposal"
+          },
+          {
+            "step": 6,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-014-s11",
+        "trace_path": "traces\\R-fixed-C-014-s11.json",
+        "status": "resolved",
+        "proposal_amount": 150000,
+        "refund_vnd": 120000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    },
+    {
+      "failure_mode": "FM-06",
+      "claim_id": "C-006",
+      "seed": 11,
+      "first_observable_wrong_step": 3,
+      "variant": {
+        "run_id": "R-m1_stale_clause-C-006-s11",
+        "trace_path": "traces\\R-m1_stale_clause-C-006-s11.json",
+        "status": "resolved",
+        "proposal_amount": 300000,
+        "refund_vnd": 300000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": false,
+        "reason_category": "status resolved != denied",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-006-s11",
+        "trace_path": "traces\\R-fixed-C-006-s11.json",
+        "status": "denied",
+        "proposal_amount": 0,
+        "refund_vnd": 0,
+        "refund_count": 0,
+        "committed_audit_count": 0,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    },
+    {
+      "failure_mode": "FM-07",
+      "claim_id": "C-001",
+      "seed": 11,
+      "first_observable_wrong_step": 4,
+      "variant": {
+        "run_id": "R-m1_sibling_refund-C-001-s11",
+        "trace_path": "traces\\R-m1_sibling_refund-C-001-s11.json",
+        "status": "denied",
+        "proposal_amount": 35000,
+        "refund_vnd": 0,
+        "refund_count": 0,
+        "committed_audit_count": 0,
+        "policy_denied": true,
+        "unexpected_rows": 1,
+        "lab8_pass": false,
+        "reason_category": "unexpected_ledger_rows",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "batch_refund"
+          },
+          {
+            "step": 5,
+            "kind": "batch_refund"
+          },
+          {
+            "step": 6,
+            "kind": "batch_refund"
+          },
+          {
+            "step": 7,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-001-s11",
+        "trace_path": "traces\\R-fixed-C-001-s11.json",
+        "status": "resolved",
+        "proposal_amount": 35000,
+        "refund_vnd": 35000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    },
+    {
+      "failure_mode": "FM-08",
+      "claim_id": "C-008",
+      "seed": 11,
+      "first_observable_wrong_step": 4,
+      "variant": {
+        "run_id": "R-m1_misreport-C-008-s11",
+        "trace_path": "traces\\R-m1_misreport-C-008-s11.json",
+        "status": "resolved",
+        "proposal_amount": 35000,
+        "refund_vnd": 20000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      },
+      "fixed": {
+        "run_id": "R-fixed-C-008-s11",
+        "trace_path": "traces\\R-fixed-C-008-s11.json",
+        "status": "resolved",
+        "proposal_amount": 35000,
+        "refund_vnd": 20000,
+        "refund_count": 1,
+        "committed_audit_count": 1,
+        "policy_denied": false,
+        "unexpected_rows": 0,
+        "lab8_pass": true,
+        "reason_category": "ok",
+        "events": [
+          {
+            "step": 1,
+            "kind": "handoff"
+          },
+          {
+            "step": 2,
+            "kind": "investigator"
+          },
+          {
+            "step": 3,
+            "kind": "quote"
+          },
+          {
+            "step": 4,
+            "kind": "reply"
+          }
+        ]
+      }
+    }
+  ],
+  "trace_case": {
+    "seeded_regression": {
+      "run_id": "R-seeded_regression-C-002-s11",
+      "trace_path": "traces\\R-seeded_regression-C-002-s11.json",
+      "status": "resolved",
+      "proposal_amount": 20000,
+      "refund_vnd": 20000,
+      "refund_count": 1,
+      "committed_audit_count": 1,
+      "policy_denied": false,
+      "unexpected_rows": 0,
+      "lab8_pass": false,
+      "reason_category": "status resolved != denied",
+      "events": [
+        {
+          "step": 1,
+          "kind": "handoff"
+        },
+        {
+          "step": 2,
+          "kind": "investigator"
+        },
+        {
+          "step": 3,
+          "kind": "model_override"
+        },
+        {
+          "step": 4,
+          "kind": "quote"
+        },
+        {
+          "step": 5,
+          "kind": "refund_history"
+        },
+        {
+          "step": 6,
+          "kind": "reply"
+        }
+      ]
+    },
+    "fixed": {
+      "run_id": "R-fixed-C-002-s11",
+      "trace_path": "traces\\R-fixed-C-002-s11.json",
+      "status": "denied",
+      "proposal_amount": 0,
+      "refund_vnd": 0,
+      "refund_count": 0,
+      "committed_audit_count": 0,
+      "policy_denied": false,
+      "unexpected_rows": 0,
+      "lab8_pass": true,
+      "reason_category": "ok",
+      "events": [
+        {
+          "step": 1,
+          "kind": "handoff"
+        },
+        {
+          "step": 2,
+          "kind": "investigator"
+        },
+        {
+          "step": 3,
+          "kind": "quote"
+        },
+        {
+          "step": 4,
+          "kind": "reply"
+        }
+      ]
+    }
+  },
+  "FM-09_guarded_example_not_observed_regression": {
+    "run_id": "R-fixed-C-005-s11",
+    "trace_path": "traces\\R-fixed-C-005-s11.json",
+    "status": "escalated",
+    "proposal_amount": 0,
+    "refund_vnd": 0,
+    "refund_count": 0,
+    "committed_audit_count": 0,
+    "policy_denied": false,
+    "unexpected_rows": 0,
+    "lab8_pass": true,
+    "reason_category": "ok",
+    "events": [
+      {
+        "step": 1,
+        "kind": "handoff"
+      },
+      {
+        "step": 2,
+        "kind": "investigator"
+      },
+      {
+        "step": 3,
+        "kind": "reply"
+      }
+    ]
+  }
+}
